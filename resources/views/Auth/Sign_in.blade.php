@@ -40,9 +40,11 @@
                 <!-- Username -->
                 <div class="mb-4">
                     <label class="block text-sm font-medium text-gray-700 mb-2">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username"
-                        class="w-full px-4 py-3 border border-gray-300 focus:border-gray-400 focus:ring-1 focus:ring-gray-200 outline-none transition-colors"
-                        required>
+                    <div class="relative">
+                        <input type="text" id="username" name="username" placeholder="Enter your username"
+                            class="w-full px-4 py-3 border border-gray-300 focus:border-gray-400 focus:ring-1 focus:ring-gray-200 outline-none transition-colors"
+                            required>
+                    </div>
                 </div>
 
                 <!-- Password -->

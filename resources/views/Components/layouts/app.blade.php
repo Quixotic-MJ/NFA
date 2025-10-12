@@ -25,12 +25,12 @@
 <body class="bg-gray-50">
     <div class="min-h-screen flex">
         <!-- Sidebar -->
-        @include('Dashboard.layouts.sidebar')
+        @include('Components.layouts.sidebar')
 
         <!-- Main Content -->
         <main class="flex-1 overflow-auto">
             <!-- Header -->
-            @include('Dashboard.layouts.header')
+            @include('Components.layouts.header')
 
             <!-- Page Content -->
             <div class="p-8">

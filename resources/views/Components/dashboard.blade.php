@@ -1,4 +1,4 @@
-@extends('Dashboard.layouts.app')
+@extends('Components.layouts.app')
 
 @section('title', 'Dashboard - NFA ERP System')
 @section('page-title', 'Dashboard Overview')
@@ -164,16 +164,4 @@
             </button>
         </div>
     </div>
-@endsection
-
-@section('scripts')
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Simple interaction for notification bell
-        const notificationBell = document.querySelector('.fa-bell').parentElement;
-        notificationBell.addEventListener('click', function() {
-            alert('You have 3 new notifications');
-        });
-    });
-</script>
 @endsection
