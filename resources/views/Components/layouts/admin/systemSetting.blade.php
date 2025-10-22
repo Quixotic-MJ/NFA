@@ -108,7 +108,7 @@
                             </div>
                             <label class="relative inline-flex items-center cursor-pointer">
                                 <input type="checkbox" class="sr-only peer" checked>
-                                <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
+                                <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
                             </label>
                         </div>
                         <div class="flex items-center justify-between">
@@ -118,17 +118,17 @@
                             </div>
                             <label class="relative inline-flex items-center cursor-pointer">
                                 <input type="checkbox" class="sr-only peer">
-                                <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
+                                <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
                             </label>
                         </div>
                         <div class="flex items-center justify-between">
                             <div>
-                                <label class="text-sm font-medium text-gray-700">Audit Logs</label>
+                                <label class="text-sm font-medium text-gray-700">Audit Log Alerts</label>
                                 <p class="text-xs text-gray-500">System change notifications</p>
                             </div>
                             <label class="relative inline-flex items-center cursor-pointer">
                                 <input type="checkbox" class="sr-only peer" checked>
-                                <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
+                                <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
                             </label>
                         </div>
                     </div>
@@ -146,140 +146,5 @@
             </div>
         </div>
     </div>
-
-    <!-- Additional Settings Sections (Hidden by default, can be shown with Alpine.js) -->
-    <div x-data="{ activeTab: 'general' }">
-        <!-- Workflows Content -->
-        <div x-show="activeTab === 'workflows'" class="bg-white border border-gray-200 rounded p-4">
-            <h3 class="text-base font-semibold text-gray-900 mb-3">Approval Workflows</h3>
-            <div class="space-y-4">
-                <div class="flex items-center justify-between p-3 border border-gray-200 rounded">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700">Purchase Orders</label>
-                        <p class="text-xs text-gray-500">2-step approval process</p>
-                    </div>
-                    <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" class="sr-only peer" checked>
-                        <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
-                    </label>
-                </div>
-                <div class="flex items-center justify-between p-3 border border-gray-200 rounded">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700">Expense Reports</label>
-                        <p class="text-xs text-gray-500">Manager approval required</p>
-                    </div>
-                    <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" class="sr-only peer" checked>
-                        <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
-                    </label>
-                </div>
-            </div>
-        </div>
-
-        <!-- Security Content -->
-        <div x-show="activeTab === 'security'" class="bg-white border border-gray-200 rounded p-4">
-            <h3 class="text-base font-semibold text-gray-900 mb-3">Security Policies</h3>
-            <div class="space-y-4">
-                <div>
-                    <label class="block text-xs font-medium text-gray-600 mb-1">Password Policy</label>
-                    <select class="w-full border border-gray-300 rounded px-3 py-1.5 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none">
-                        <option>Standard (8 characters)</option>
-                        <option>Strong (12 characters)</option>
-                        <option>Very Strong (16 characters)</option>
-                    </select>
-                </div>
-                <div class="flex items-center justify-between">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700">Two-Factor Authentication</label>
-                        <p class="text-xs text-gray-500">Require 2FA for all users</p>
-                    </div>
-                    <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" class="sr-only peer">
-                        <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
-                    </label>
-                </div>
-            </div>
-        </div>
-
-        <!-- Email Content -->
-        <div x-show="activeTab === 'email'" class="bg-white border border-gray-200 rounded p-4">
-            <h3 class="text-base font-semibold text-gray-900 mb-3">Email Templates</h3>
-            <div class="space-y-3">
-                <div>
-                    <label class="block text-xs font-medium text-gray-600 mb-1">SMTP Server</label>
-                    <input type="text" value="smtp.nfa.gov.ph" class="w-full border border-gray-300 rounded px-3 py-1.5 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none">
-                </div>
-                <div>
-                    <label class="block text-xs font-medium text-gray-600 mb-1">From Email</label>
-                    <input type="email" value="noreply@nfa.gov.ph" class="w-full border border-gray-300 rounded px-3 py-1.5 text-sm focus:border-blue-500 focus:ring-1 focus:ring-blue-500 outline-none">
-                </div>
-            </div>
-        </div>
-
-        <!-- Integration Content -->
-        <div x-show="activeTab === 'integration'" class="bg-white border border-gray-200 rounded p-4">
-            <h3 class="text-base font-semibold text-gray-900 mb-3">Integration Settings</h3>
-            <div class="space-y-3">
-                <div class="flex items-center justify-between p-3 border border-gray-200 rounded">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700">Accounting System</label>
-                        <p class="text-xs text-gray-500">QuickBooks integration</p>
-                    </div>
-                    <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" class="sr-only peer" checked>
-                        <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
-                    </label>
-                </div>
-                <div class="flex items-center justify-between p-3 border border-gray-200 rounded">
-                    <div>
-                        <label class="text-sm font-medium text-gray-700">Payment Gateway</label>
-                        <p class="text-xs text-gray-500">PayMaya integration</p>
-                    </div>
-                    <label class="relative inline-flex items-center cursor-pointer">
-                        <input type="checkbox" class="sr-only peer">
-                        <div class="w-9 h-5 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-blue-600"></div>
-                    </label>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
-@endsection
-
-@section('scripts')
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Tab switching functionality
-        const tabs = document.querySelectorAll('nav a');
-        const sections = document.querySelectorAll('[x-show]');
-        
-        tabs.forEach(tab => {
-            tab.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Update active tab
-                tabs.forEach(t => {
-                    t.classList.remove('border-blue-500', 'text-blue-600');
-                    t.classList.add('border-transparent', 'text-gray-500');
-                });
-                
-                this.classList.add('border-blue-500', 'text-blue-600');
-                this.classList.remove('border-transparent', 'text-gray-500');
-                
-                // Show corresponding section
-                const tabName = this.textContent.trim().toLowerCase();
-                // You would implement Alpine.js data binding here for real tab switching
-            });
-        });
-
-        // Form submission
-        const forms = document.querySelectorAll('form, [type="checkbox"]');
-        forms.forEach(form => {
-            form.addEventListener('change', function() {
-                // Show save indicator or auto-save
-                console.log('Setting changed');
-            });
-        });
-    });
-</script>
 @endsection
